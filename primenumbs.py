@@ -9,10 +9,6 @@ def iseven(numb):
     else:
         return False
 
-# print(iseven(2))
-# print(iseven(3))
-
-
 def isprime(num):
     i = 2
     isprime=True
@@ -23,18 +19,13 @@ def isprime(num):
     if isprime:
         return num
 
-# print(isprime(9))
-
-
-
-i = 5
-print(1)
-print(2)
-print(3)
-while i < 100:
-    if not iseven(i):
-        if isprime(i):
-            print(i)
+def print_prime_numbs(num_of_primes):
+    i = 5
+    print(1)
+    print(2)
+    print(3)
+    while i <= num_of_primes:
+        if not iseven(i):
+            if isprime(i):
+                print(i)
     i += 1
-
-    
